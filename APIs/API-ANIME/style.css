@@ -1,0 +1,73 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(145, 222, 238), rgb(172, 32, 141));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+h2{
+    text-align: center;
+	font-size: 15px;
+}
+
+
+h3{
+    text-align: center;
+	font-size: 10px;
+}
+
+.animes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: rgb(95, 92, 92);
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
